@@ -6,8 +6,6 @@
     import logo from '$lib/img/logomariposa.png';
     
     
-
-    // No se necesitan scripts específicos, ya que las bibliotecas de JS serán manejadas globalmente
   </script>
   <svelte:head>
     <meta charset="utf-8" />
@@ -128,44 +126,6 @@
   <!-- svelte-ignore a11y_consider_explicit_label -->
   <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
     <style>
-      :global(body) {
-        font-family: 'Rubik', sans-serif;
-      }
-    
-      .bg-breadcrumb {
-        background-color: #f8f9fa;
-      }
-    
-      .breadcrumb-animation {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-      }
-    
-      .breadcrumb-animation li {
-        width: 10px;
-        height: 10px;
-        background-color: #007bff;
-        margin: 0 5px;
-        border-radius: 50%;
-        animation: pulse 1.5s infinite;
-      }
-    
-      @keyframes pulse {
-        0% {
-          transform: scale(0.95);
-          box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
-        }
-        70% {
-          transform: scale(1);
-          box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
-        }
-        100% {
-          transform: scale(0.95);
-          box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
-        }
-      }
     
       .footer {
         background-color: #f8f9fa;
