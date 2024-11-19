@@ -6,8 +6,6 @@
     import logo from '$lib/img/logomariposa.png';
     
     
-
-    // No se necesitan scripts específicos, ya que las bibliotecas de JS serán manejadas globalmente
   </script>
   <svelte:head>
     <meta charset="utf-8" />
@@ -32,6 +30,7 @@
     />
 </svelte:head>
   <!-- Navbar -->
+
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4 px-lg-5 py-3 py-lg-0">
     <a href="/" class="navbar-brand p-0">
       <h1 class="display-6 text-primary m-0">
@@ -61,7 +60,29 @@
       </div>
     </div>
   </nav>
-
+       <!-- Header -->
+       <div class="container-fluid bg-breadcrumb">
+        <ul class="breadcrumb-animation">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="container text-center py-5" style="max-width: 900px;">
+          <h3 class="display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">CITAS AGENDADAS </h3>
+          <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+            <li class="breadcrumb-item"><a href="/index/">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="#paginas">Páginas</a></li>
+            <li class="breadcrumb-item active text-primary">Contactos</li>
+          </ol>
+        </div>
+      </div>
 
    <!-- Footer Inicio -->
 <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">

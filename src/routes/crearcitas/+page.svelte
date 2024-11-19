@@ -30,6 +30,7 @@
     />
 </svelte:head>
   <!-- Navbar -->
+
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4 px-lg-5 py-3 py-lg-0">
     <a href="/" class="navbar-brand p-0">
       <h1 class="display-6 text-primary m-0">
@@ -59,7 +60,89 @@
       </div>
     </div>
   </nav>
-  
+       <!-- Header -->
+       <div class="container-fluid bg-breadcrumb">
+        <ul class="breadcrumb-animation">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="container text-center py-5" style="max-width: 900px;">
+          <h3 class="display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">AGENDA TU CITA</h3>
+          <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+            <li class="breadcrumb-item"><a href="/index/">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="#paginas">Páginas</a></li>
+            <li class="breadcrumb-item active text-primary">Contactos</li>
+          </ol>
+        </div>
+      </div>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4>Solicitar Cita Psicológica</h4>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Fecha de la Cita</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Horario Preferido</label>
+                            <select class="form-select" required>
+                                <option value="">Selecciona un horario</option>
+                                <option value="manana">Mañana (8:00 am - 9:00 am)</option>
+                                <option value="tarde">Mañana (9:00 am - 10:00 am)</option>
+                                <option value="tarde">Mañana (10:00 am - 11:00 am)</option>
+                                <option value="tarde">Mañana (11:00 am - 12:00 pm)</option>
+                                <option value="tarde">Tarde (2:00 pm - 3:00 pm)</option>
+                                <option value="tarde">Tarde (3:00 pm - 4:00 pm)</option>
+                                <option value="tarde">Tarde (4:00 pm - 5:00 pm)</option>
+
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Grupo de Atención</label>
+                            <select class="form-select" required>
+                                <option value="">Selecciona un Grado</option>
+                                <option value="adolescentes">7</option>
+                                <option value="adultos">8</option>
+                                <option value="parejas">9</option>
+                                <option value="tercera_edad">10</option>
+                                <option value="tercera_edad">11</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Jornada de estudio</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="jornada" value="presencial" required>
+                                <label class="form-check-label">mañana</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="jornada" value="virtual" required>
+                                <label class="form-check-label">tarde</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary w-100">Solicitar Cita</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
    <!-- Footer Inicio -->
 <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
