@@ -1,56 +1,83 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	// Importaciones CSS
+  import { onMount } from 'svelte';
+  // Importaciones CSS
 
-	import '$lib/css/style.css';
-	import '$lib/css/todo.css';
-	import '$lib/animate/animate.min.css';
-	import '$lib/lightbox/css/lightbox.min.css';
+  import '$lib/css/style.css';
+  import '$lib/css/todo.css';
+  import '$lib/animate/animate.min.css';
+  import '$lib/lightbox/css/lightbox.min.css';
     import about from '$lib/img/about-1.png';
     import unacitaconpsicolog from '$lib/img/-una-cita-con-psicolog-a-.png';
     import logo from '$lib/img/logomariposa.png';
-	</script>
+  </script>
 
 <svelte:head>
+    <meta charset="utf-8" />
     <title>You Can Tell Me</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Rubik:wght@400;500&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+        rel="stylesheet"
+    />
 </svelte:head>
 
+<!-- Spinner Start -->
 
-
+<!-- Spinner End -->
 
 <!-- Navbar & Hero Start -->
-<div class="container-fluid p-0">
-<nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4 px-lg-5 py-3 py-lg-0">
-    <a href="/index/" class="navbar-brand p-0">
-        <h1 class="display-6 text-primary m-0"><img src="https://images.vexels.com/media/users/3/156854/isolated/preview/cf2b0cb67701d3c7ffbe6860cae9619a-icono-de-silueta-de-mariposa-monarca.png" alt="Logo"
-                style="width: 80px; height: auto;">You can tell me</h1>
-
-    </a>
-    <button aria-label="button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="fa fa-bars"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto py-0">
-            <a href="/index/" class="nav-item nav-link active">Inicio</a>
-            <a href="/sobrenosotros/" class="nav-item nav-link">Sobre Nosotros</a>
-
-            <div class="nav-item dropdown">
-                <a href="1" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Paginas</a>
-                <div class="dropdown-menu m-0">
-                    <a href="#k" class="dropdown-item active">Apoyo Psicológico</a>
-                    <a href="/estrategias/" class="dropdown-item">Estrategias de Manejo del Estrés</a>
-                    <a href="/Tecnicasderelajacion/" class="dropdown-item">Técnicas de Relajación </a>
+<div class="container-fluid header position-relative overflow-hidden p-0">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="/index/" class="navbar-brand p-0">
+            <h1 class="display-6 text-primary m-0">
+                <img
+                src={logo}
+                alt="sapas"
+                style="width: 80px; height: auto;"
+            /> You can tell me
+            </h1>
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-label="Toggle navigation"
+        >
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="/index/" class="nav-item nav-link active">Inicio</a>
+                <a href="/citas/" class="nav-item nav-link">CITAS</a>
+                <a href="/crearcitas/" class="nav-item nav-link">Crear citas</a>
+                <div class="nav-item dropdown">
+                    <a href="#paginas" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Paginas</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="/sobrenosotros/" class="dropdown-item active">Sobre Nosotros</a>
+                        <a href="/estrategias/" class="dropdown-item">Estrategias de Manejo del Estrés</a
+                        >
+                        <a href="/Tecnicasderelajacion/" class="dropdown-item">Técnicas de Relajación </a>
+                    </div>
                 </div>
+                <a href="/contacto/" class="nav-item nav-link">Contáctanos</a>
             </div>
-            <a href="/contacto/" class="nav-item nav-link">¡Contactanos!</a>
         </div>
+    </nav>
     </div>
-</nav>
-</div>
-<!-- Navbar & Hero End -->
 
 
 <!-- Header Start -->
@@ -321,4 +348,3 @@
   
   
     </style>
-    

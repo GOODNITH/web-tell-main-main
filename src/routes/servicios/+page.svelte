@@ -6,6 +6,7 @@
 	import '$lib/css/todo.css';
 	import '$lib/animate/animate.min.css';
 	import '$lib/lightbox/css/lightbox.min.css';
+	import logo from '$lib/img/logomariposa.png';
 	</script>
 	
 
@@ -41,8 +42,11 @@
 	<nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
 		<a href="/index/" class="navbar-brand p-0">
 			<h1 class="display-6 text-primary m-0">
-				<img src="https://images.vexels.com/media/users/3/156854/isolated/preview/cf2b0cb67701d3c7ffbe6860cae9619a-icono-de-silueta-de-mariposa-monarca.png" alt="sapas" style="width: 80px; height: auto;" /> You
-				can tell me
+				<img
+                src={logo}
+                alt="sapas"
+                style="width: 80px; height: auto;"
+            /> You can tell me
 			</h1>
 		</a>
 		<button

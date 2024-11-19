@@ -12,7 +12,6 @@
     import logo from '$lib/img/logomariposa.png';
     import apoyoPsicologico from '$lib/img/apoyo-psicol-gico-adaptado-a-estudiantes.png';
     import citaPsicologa from '$lib/img/una-persona-en-una-cita-con-su-psicologa--servicio.jpg';
-    import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
 
 
 </script>
@@ -365,7 +364,7 @@
           <div class="footer-item d-flex flex-column">
             <h4 class="mb-4 text-dark">Información de Contacto</h4>
             <!-- svelte-ignore a11y_invalid_attribute -->
-            <a href=""><i class="fas fa-envelope me-2"></i>  psicologíaonce@gmail.com</a>
+            <a href="/contacto/"><i class="fas fa-envelope me-2"></i>  psicologíaonce@gmail.com</a>
             <div class="d-flex justify-content-center align-items-center">
               <i class="fas fa-share fa-2x text-secondary me-2"></i>
             </div>
